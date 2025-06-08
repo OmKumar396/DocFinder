@@ -28,7 +28,6 @@ DocFinder is a modern web application designed to revolutionize healthcare acces
 
 ---
 
-
    🔑 Environment Variables
 Google Maps API Key:
 The API key is currently hardcoded in src/App.jsx.
