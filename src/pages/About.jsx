@@ -8,7 +8,8 @@ const About = () => {
   const { ref: illuRef, inView: illuInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white font-inter overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6 font-inter overflow-hidden">
+      {/* Main Container */}
       <div className="w-full max-w-screen-xl bg-orange-50 rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
 
         {/* Text Content Section */}

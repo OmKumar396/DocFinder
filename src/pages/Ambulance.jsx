@@ -93,8 +93,8 @@ const Ambulance = () => {
   };
 
   return (
-    <div className="min-h-screen bg-orange-50 flex flex-col items-center py-12 font-inter">
-      <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+    <div className="min-h-screen bg-white flex flex-col items-center py-12 font-inter">
+      <div className="w-full max-w-5xl bg-orange-50 rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
         {/* Booking Form Section */}
         <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-[#ff8c00] mb-4">Book an Ambulance</h2>

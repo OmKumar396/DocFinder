@@ -29,16 +29,16 @@ export const teamMembers = [
     name: "Dinesh Guru Mahapatra",
     role: "Full Stack Developer",
     bgColor: "bg-purple-200",
-    image: "/api/placeholder/300/300"
+    image: "/images/team/dinesh.jpg"
   },
   {
-    name: "Gunu Kumar",
+    name: "Omm Kumar",
     role: "Full Stack Developer",
     bgColor: "bg-blue-200",
     image: "/api/placeholder/300/300"
   },
   {
-    name: "Nishant Panda",
+    name: "Ansita Mishra",
     role: "Lead UI/UX Designer",
     bgColor: "bg-green-200",
     image: "/api/placeholder/300/300"

@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 function IconInput({ children, placeholder, type, value, onChange, name }) {
   return (
-    <div className="flex items-center w-full relative h-12 border border-gray-300 rounded-lg mt-4 focus-within:ring-2 focus-within:ring-[#ff8c00] focus-within:border-[#ff8c00]">
+    <div className="bg-white flex items-center w-full relative h-12 border border-gray-300 rounded-lg mt-4 focus-within:ring-2 focus-within:ring-[#ff8c00] focus-within:border-[#ff8c00]">
       <div className="icon__wrapper w-14 absolute flex justify-center items-center">
         <span className="text-xl opacity-80 text-gray-500">{children}</span>
       </div>
@@ -53,8 +53,8 @@ const Login = () => {
   };
 
   return (
-    <div className='abcd flex justify-center items-center w-full h-screen bg-slate-50'>
-      <div className='form-container overflow-hidden justify-between rounded-2xl flex shadow-2xl border-none w-11/12 max-w-screen-xl'>
+    <div className='abcd flex justify-center items-center w-full h-screen bg-white'>
+      <div className='form-container overflow-hidden justify-between rounded-2xl flex shadow-2xl border-none w-11/12 max-w-screen-xl bg-orange-50'>
         {/* Form Section with transition */}
         <div
           ref={formRef}
@@ -78,6 +78,7 @@ const Login = () => {
               value={form.email}
               onChange={handleChange}
               name="email"
+              
             >
               <MdOutlineMailOutline/>
             </IconInput>
