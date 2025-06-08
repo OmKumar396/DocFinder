@@ -10,10 +10,10 @@ DocFinder is a modern web application designed to revolutionize healthcare acces
 - **Ambulance Booking:** Book ambulances and view registered ambulance services by city.
 - **Hospital Portal:** Hospitals can manage bed availability and respond to patient requests.
 - **Emergency Contact:** Quick access to emergency support and contact forms.
-- **Responsive UI:** Fully responsive design for mobile, tablet, and desktop.
+- **Responsive UI:** Fully responsive design for all devices.
 - **Interactive Map:** Google Maps integration for hospital locations.
 - **User Authentication:** Separate login/signup for users and hospitals.
-- **Testimonials & Blog:** User reviews and healthcare articles for information and trust.
+- **Testimonials & Blog:** User reviews and healthcare articles.
 
 ---
 
@@ -28,27 +28,27 @@ DocFinder is a modern web application designed to revolutionize healthcare acces
 
 ---
 
-   🔑 Environment Variables
-Google Maps API Key:
-The API key is currently hardcoded in src/App.jsx.
-For production, store your key securely and load it from environment variables.🔑 Environment Variables
-Google Maps API Key:
-The API key is currently hardcoded in src/App.jsx.
-For production, store your key securely and load it from environment variables.
+## 🔑 Environment Variables
 
-👥 Authors
-Dinesh Guru Mahapatra
+- **Google Maps API Key:**  
+  The API key is currently hardcoded in `src/App.jsx`.  
+  For production, store your key securely and load it from environment variables.
+
 ---
-Omm Kumar
+
+## 👥 Authors
+
+- Dinesh Guru Mahapatra
+- Omm Kumar
+- Ansita Mishra
+
 ---
-Ansita Mishra
 
+## 📬 Contact
 
-📬 Contact
-Email: dinshguru88@gmail.com
+- **Email:** dinshguru88@gmail.com
+- **Location:** ITER, Jagamara, Khandagiri, Bhubaneswar, Odisha-751030
+
 ---
-Location: ITER, Jagamara, Khandagiri, Bhubaneswar, Odisha-751030
 
-
-DocFinder – Bridging the gap between urgent medical needs and available resources.
-
+*DocFinder – Bridging the gap between urgent medical needs and available resources.*
