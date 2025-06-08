@@ -28,19 +28,6 @@ DocFinder is a modern web application designed to revolutionize healthcare acces
 
 ---
 
-## ⚡ Getting Started
-
-### Prerequisites
-
-- Node.js (v18+ recommended)
-- npm
-
-### Installation
-
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/OmKumar396/DocFinder.git
-   cd docfinder
 
    🔑 Environment Variables
 Google Maps API Key:
