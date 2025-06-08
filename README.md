@@ -38,11 +38,15 @@ For production, store your key securely and load it from environment variables.
 
 👥 Authors
 Dinesh Guru Mahapatra
+---
 Omm Kumar
+---
 Ansita Mishra
+
 
 📬 Contact
 Email: dinshguru88@gmail.com
+---
 Location: ITER, Jagamara, Khandagiri, Bhubaneswar, Odisha-751030
 
 
