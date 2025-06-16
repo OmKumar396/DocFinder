@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoBedOutline, IoPeopleOutline, IoAddCircleOutline, IoLogOutOutline, IoMailOutline, IoLogoLinkedin } from 'react-icons/io5';
 
+
 const hospitalFeatures = [
   {
     icon: <IoBedOutline />,
@@ -59,9 +60,9 @@ const HospitalHome = () => {
           <p className="text-lg text-gray-700 mb-6 max-w-xl">
             Manage your hospital's bed availability, respond to patient requests, and keep your data up to date—all in one place.
           </p>
-          <a href="/hospital-dashboard">
+          <a href="/hospital-registration" className="mb-4">
             <button className="hover:bg-[#ff8c00] text-[#ff8c00] font-semibold hover:text-white rounded-md border-2 border-[#ff8c00] px-6 py-3 duration-200">
-              Go to Dashboard
+              Register
             </button>
           </a>
         </div>
