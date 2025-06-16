@@ -39,7 +39,7 @@ DocFinder is a modern web application designed to revolutionize healthcare acces
 ## 👥 Authors
 
 - Dinesh Guru Mahapatra
-- Omm Kumar
+- Om Kumar
 - Ansita Mishra
 
 ---
