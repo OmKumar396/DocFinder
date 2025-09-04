@@ -26,7 +26,7 @@ const HospitalRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/hospital/register-details', formData);
+      const res = await axios.post('https://doc-finder-ten.vercel.app/api/hospital/register-details', formData);
       setMessage(res.data.message);
       navigate('/hospital/dashboard');
     } catch (err) {
@@ -62,3 +62,4 @@ const HospitalRegister = () => {
 };
 
 export default HospitalRegister;
+
