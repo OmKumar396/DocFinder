@@ -22,11 +22,5 @@
       "src": "/(.*)",
       "dest": "Frontend/build/$1"
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
   ]
 }
