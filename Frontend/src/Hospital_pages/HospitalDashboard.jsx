@@ -13,7 +13,7 @@ const HospitalDashboard = () => {
   useEffect(() => {
     const fetchHospitals = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/hospital/all');
+        const res = await axios.get('https://doc-finder-ten.vercel.app/api/hospital/all');
         setHospitals(res.data);
 
         // Optionally: aggregate beds for summary stats
@@ -118,3 +118,4 @@ const HospitalDashboard = () => {
 };
 
 export default HospitalDashboard;
+
