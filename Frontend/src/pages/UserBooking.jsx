@@ -10,7 +10,7 @@ const UserBookings = () => {
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/appointments/user/${user._id}`);
+        const res = await axios.get(`https://doc-finder-ten.vercel.app/api/appointments/user/${user._id}`);
         setAppointments(res.data);
       } catch (err) {
         console.error('Error fetching appointments:', err);
@@ -45,3 +45,4 @@ const UserBookings = () => {
 };
 
 export default UserBookings;
+
