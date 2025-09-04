@@ -8,7 +8,7 @@ const HospitalBeds = () => {
   useEffect(() => {
     const fetchHospitalDetails = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/hospital-details');
+        const res = await axios.get('https://doc-finder-ten.vercel.app/api/hospital-details');
         setHospitals(res.data);
       } catch (err) {
         console.error('Failed to fetch hospital details:', err);
@@ -66,3 +66,4 @@ const HospitalBeds = () => {
 };
 
 export default HospitalBeds;
+
