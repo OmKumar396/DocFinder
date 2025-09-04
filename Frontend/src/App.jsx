@@ -11,7 +11,7 @@ import Hospital from './pages/Hospital';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import HospitalRegister from './Hospital_pages/HospitalRegister';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/dashboard';
 import HospitalLogin from './Hospital_pages/HospitalLogin';
 import HospitalHome from './Hospital_pages/HospitalHome';
 import BookBed from './pages/BookBed';
