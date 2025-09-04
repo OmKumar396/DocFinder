@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const handleSendOTP = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/forgot-password/send-otp', {
+      const res = await fetch('https://doc-finder-ten.vercel.app/api/forgot-password/send-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -31,7 +31,7 @@ const ForgotPassword = () => {
   const handleResetPassword = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/forgot-password/reset', {
+      const res = await fetch('https://doc-finder-ten.vercel.app/api/forgot-password/reset', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp, newPassword }),
@@ -106,3 +106,4 @@ const ForgotPassword = () => {
 };
 
 export default ForgotPassword;
+
