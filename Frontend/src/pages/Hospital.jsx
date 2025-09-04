@@ -16,7 +16,7 @@ const Hospital = () => {
   useEffect(() => {
     const fetchHospitals = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/hospital/all");
+        const response = await axios.get("https://doc-finder-ten.vercel.app/api/hospital/all");
         setHospitals(response.data);
         setFilteredHospitals(response.data);
       } catch (err) {
