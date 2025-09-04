@@ -28,7 +28,7 @@ const BookBed = () => {
     try {
       setLoading(true);
       setMsg('');
-      const response = await axios.post('http://localhost:5000/api/appointments/book', {
+      const response = await axios.post('https://doc-finder-ten.vercel.app/api/appointments/book', {
         userId: user._id,
         email: user.email,
         hospitalId,
@@ -106,3 +106,4 @@ const BookBed = () => {
 };
 
 export default BookBed;
+
