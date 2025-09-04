@@ -59,7 +59,7 @@ const Signup = () => {
       : { registrationNumber: form.registrationNumber, password: form.password };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/${endpoint}`, {
+      const response = await fetch(`https://doc-finder-ten.vercel.app/api/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
