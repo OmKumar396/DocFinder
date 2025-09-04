@@ -77,7 +77,7 @@ const AmbulanceRegister = () => {
         if (!id) return;
         try {
             // Now this request will have the correct URL, e.g., /api/ambulances/hospital/687ca91ccbb1...
-            const response = await axios.get(`http://localhost:5000/api/ambulances/hospital/${id}`);
+            const response = await axios.get(`https://doc-finder-ten.vercel.app/api/ambulances/hospital/${id}`);
             setAmbulances(response.data);
         } catch (err) {
             console.error("Failed to fetch ambulances:", err.message);
@@ -100,10 +100,10 @@ const AmbulanceRegister = () => {
         const payload = { ...formData, hospital: hospitalId };
         try {
             if (editingId) {
-                await axios.put(`http://localhost:5000/api/ambulances/${editingId}`, payload);
+                await axios.put(`https://doc-finder-ten.vercel.app/api/ambulances/${editingId}`, payload);
                 toast.success("Ambulance updated successfully");
             } else {
-                await axios.post("http://localhost:5000/api/ambulances", payload);
+                await axios.post("https://doc-finder-ten.vercel.app/api/ambulances", payload);
                 toast.success("Ambulance registered successfully");
             }
             setFormData({ vehicleNumber: '', driverName: '', contact: '', availability: true });
@@ -129,7 +129,7 @@ const AmbulanceRegister = () => {
     const handleDelete = (id) => {
         const confirmDelete = async () => {
             try {
-                await axios.delete(`http://localhost:5000/api/ambulances/${id}`);
+                await axios.delete(`https://doc-finder-ten.vercel.app/api/ambulances/${id}`);
                 toast.success("Deleted successfully");
                 fetchAmbulances(hospitalId);
             } catch (err) {
@@ -238,3 +238,4 @@ const AmbulanceRegister = () => {
 };
 
 export default AmbulanceRegister;
+
