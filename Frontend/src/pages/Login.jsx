@@ -66,7 +66,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/login/user', {
+      const response = await fetch('https://doc-finder-ten.vercel.app/api/login/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -93,7 +93,7 @@ const Login = () => {
 
   const sendOtp = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/forgot-password/send-otp', {
+      const res = await fetch('https://doc-finder-ten.vercel.app/api/forgot-password/send-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: otpEmail }),
@@ -109,7 +109,7 @@ const Login = () => {
 
   const verifyOtpAndReset = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/forgot-password/reset', {
+      const res = await fetch('https://doc-finder-ten.vercel.app/api/forgot-password/reset', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: otpEmail, otp: otpCode, newPassword }),
