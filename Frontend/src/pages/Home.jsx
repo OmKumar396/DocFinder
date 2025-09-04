@@ -25,7 +25,7 @@ const Home = () => {
     setIsVisible(true);
     const fetchCities = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/hospital/cities");
+        const response = await axios.get("https://doc-finder-ten.vercel.app/api/hospital/cities");
         const formattedCities = response.data.map(city => ({
           name: city._id,
           beds: city.totalBedsAvailable,
