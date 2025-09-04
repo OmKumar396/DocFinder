@@ -15,7 +15,7 @@ const AmbulanceBooking = () => {
   useEffect(() => {
     const fetchAvailableAmbulances = () => {
       setLoading(true);
-      axios.get('http://localhost:5000/api/ambulances/available')
+      axios.get('https://doc-finder-ten.vercel.app/api/ambulances/available')
         .then(res => {
           setAmbulances(res.data);
         })
@@ -40,7 +40,7 @@ const AmbulanceBooking = () => {
       toast.error('You must be logged in to book an ambulance.');
       return;
     }
-    const bookingPromise = axios.post(`http://localhost:5000/api/ambulances/book/${ambulanceId}`, {
+    const bookingPromise = axios.post(`https://doc-finder-ten.vercel.app/api/ambulances/book/${ambulanceId}`, {
       userId: user._id,
     });
     toast.promise(
@@ -156,5 +156,6 @@ const AmbulanceBooking = () => {
     </div>
   );
 };
+
 
 export default AmbulanceBooking;
