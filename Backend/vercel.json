@@ -10,19 +10,26 @@
           "routes/**",
           "models/**",
           "middleware/**",
-          "utils/**",
-          "config/**"
+          "utils/**"
         ],
-        "maxLambdaSize": "50mb"
+        "maxLambdaSize": "50mb",
+        "nodeVersion": "18.x"
       }
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "server.js"
     }
-  ]
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://omkumarokr0101:<omkumar90s1147>@cluster0.ajdzl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "JWT_SECRET": "iamtonystark",
+  }
 }
+
+}
+
 
 
