@@ -14,7 +14,7 @@ const UserDashboard = () => {
     if (user?._id) {
       setLoading(true);
       axios
-        .get(`http://localhost:5000/api/appointments/user/${user._id}`)
+        .get(`https://doc-finder-ten.vercel.app/api/appointments/user/${user._id}`)
         .then((res) => {
           setAppointments(res.data);
         })
@@ -136,5 +136,6 @@ const UserDashboard = () => {
     </div>
   );
 };
+
 
 export default UserDashboard;
