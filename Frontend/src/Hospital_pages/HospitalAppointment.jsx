@@ -66,7 +66,7 @@ const HospitalAppointments = () => {
             }
 
             try {
-                const res = await axios.get(`http://localhost:5000/api/appointments/hospital/${correctId}`);
+                const res = await axios.get(`https://doc-finder-ten.vercel.app/api/appointments/hospital/${correctId}`);
                 setAppointments(res.data);
             } catch (err) {
                 setError('Failed to fetch appointments from the server.');
@@ -87,7 +87,7 @@ const HospitalAppointments = () => {
         if (!selectedAppointmentId) return;
         try {
             setAppointments((prev) => prev.filter((appt) => appt._id !== selectedAppointmentId));
-            await axios.put(`http://localhost:5000/api/appointments/complete/${selectedAppointmentId}`);
+            await axios.put(`https://doc-finder-ten.vercel.app/api/appointments/complete/${selectedAppointmentId}`);
         } catch (err) {
             console.error('Error completing appointment:', err);
             setError('Could not complete appointment. Please refresh and try again.');
@@ -173,3 +173,4 @@ const HospitalAppointments = () => {
 };
 
 export default HospitalAppointments;
+
